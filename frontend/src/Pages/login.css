@@ -1,0 +1,33 @@
+.input-form{
+    display:flex;
+    justify-content: center;
+    padding-top: 200px;
+    background-image:url("../images/house.jpg") ;
+    background-size: cover;
+    height: 60vh;
+}
+.register-form{
+    display:flex;
+    justify-content: center;
+    padding-top: 200px;
+    background-image:url("../images/house.jpg") ;
+    background-size: cover;
+    height: 60vh;
+}
+input{
+    width:550px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 168, 194);
+    background:rgba(225,225,225.0.2);
+}
+button{
+    padding: 9px 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 168, 194);
+    background-color: #db4a87;
+    color: white;
+    margin-left:35% ;
+    background:rgba(225,225,225.0.2);
+    opacity: 1;
+}
