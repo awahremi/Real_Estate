@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./main.css"
 import house from "../images/house.jpg"
+import PropertiesSample from "../Components/propertiesSample";
+import Onboarding from "../Components/onboarding";
 
 const Main = () => {
     return (
@@ -19,7 +21,10 @@ const Main = () => {
                 <div className="main-right">
                     <img src={house} alt="house" />
                 </div>
+
             </div>
+            <PropertiesSample />
+            <Onboarding />
         </div>
     )
 };

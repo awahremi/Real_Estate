@@ -7,6 +7,10 @@ module.exports = (sequelize, Sequelize) => {
       primarykey: true,
       allowNull: false,
     },
+    name: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
     userId: {
       type: Sequelize.UUID,
       allowNull: true,
@@ -20,6 +24,7 @@ module.exports = (sequelize, Sequelize) => {
         return this.setDataValue("images", JSON.stringify(val));
       },
       length: 100000,
+      allowNull: false,
     },
     region: {
       type: Sequelize.STRING,

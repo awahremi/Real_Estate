@@ -1,0 +1,71 @@
+.sample-properties {
+  padding: 100px 50px 0 50px;
+}
+
+.sample-properties-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sample-properties h3 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sample-properties-container {
+  padding: 0 50px 100px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.property {
+  width: 350px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.property img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.property-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.property-description {
+  font-size: 16px;
+  color: grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.property-price {
+  font-weight: bold;
+  font-size: 22px;
+  color: #7b8188;
+}
+
+.property-rent {
+  background-color: #ff4f4f;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  width: 60px;
+  text-align: center;
+}
+.property-sale {
+  background-color: #4f96ff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  width: 60px;
+  text-align: center;
+}

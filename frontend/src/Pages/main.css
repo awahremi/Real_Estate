@@ -1,6 +1,7 @@
 .main{
     padding: 0 180px;
-
+    display: flex;
+    flex-direction: column;
 }
 .main-container{
     display: flex;

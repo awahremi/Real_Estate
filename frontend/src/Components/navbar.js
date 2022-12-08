@@ -5,6 +5,8 @@ import "./navbar.css"
 const Navbar = () => {
     return (
         <nav className="navbar">
+            
+            <div className=""></div>
             <div className="nav-left">
                 <Link to="/"><img src={logo} alt="logo"/></Link>
                 <Link to="/"><p>Cool Estates</p></Link>
