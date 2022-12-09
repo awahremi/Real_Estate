@@ -13,7 +13,6 @@ exports.createProperty = async (req, res) => {
 
     let property = await Property.create({
       propertyId: uuid(),
-      name: req.body.name,
       userId: user.userId,
       images: req.body.images,
       region: req.body.region,

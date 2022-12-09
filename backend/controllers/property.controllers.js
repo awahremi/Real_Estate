@@ -2,6 +2,8 @@ const db = require("../models");
 const Property = db.property;
 const { uuid } = require("uuidv4");
 const User = db.user;
+const Sequelize = require("sequelize");
+const Op = db.Op;
 
 exports.createProperty = async (req, res) => {
   try {
@@ -13,6 +15,7 @@ exports.createProperty = async (req, res) => {
 
     let property = await Property.create({
       propertyId: uuid(),
+      name: req.body.name,
       userId: user.userId,
       images: req.body.images,
       region: req.body.region,
@@ -40,8 +43,28 @@ exports.createProperty = async (req, res) => {
 };
 
 exports.getAllProperties = async (req, res) => {
+  //const { region, town, rent, sale, maxPrice } = req.query;
   try {
+    var where = [];
+    // iterate over the params
+    for (let q in req.query) {
+      var obj = {};
+      if (req.query[q]) {
+        obj[q] = { [Op.eq]: req.query[q] };
+        if (req.query.price)
+          obj["price"] = { [Op.lte]: req.query.price };
+        // if q is discoveryMethod then the obj is { discoveryMethod: { [Op.eq]: req.query.discoveryMethod } }
+        where.push(obj);
+      }
+    }
+
     let properties = await Property.findAll({
+      where:
+        where.length == 0
+          ? {}
+          : {
+              [Op.or]: where, // assign the "where" array here
+            },
       attributes: {
         exclude: ["userId", "id"],
       },

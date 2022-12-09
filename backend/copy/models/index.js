@@ -20,23 +20,13 @@ const sequelize = new Sequelize(
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-const Op = Sequelize.Op;
-const operatorsAliases = {
-  $eq: Op.eq,
-  $ne: Op.ne,
-  $any: Op.any,
-  $all: Op.all,
-  $values: Op.values,
-  $col: Op.col,
-};
-db.Op = Op;
 db.user = require("./user.model.js")(sequelize, Sequelize);
 db.property = require("./property.model.js")(sequelize, Sequelize);
 db.role = require("./role.model.js")(sequelize, Sequelize);
 
 db.user.hasMany(db.property, {
   foreignKey: "userId",
-});
+});            
 
 db.role.belongsToMany(db.user, {
   through: "user_roles",
