@@ -22,7 +22,7 @@ const Onboarding = () => {
                         
                     </div>
                     <div>
-                        <span className="circle bg3"></span>
+                        <span className="circle bg3">3</span>
                         <h4>Get Contacted</h4>
                         <p>Get contacted by clients interested in buying
                          or renting your property</p>

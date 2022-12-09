@@ -3,7 +3,7 @@ const { Sequelize } = require("sequelize");
 module.exports = (sequelize, Sequelize) => {
   const Role = sequelize.define("roles", {
     id: {
-      type: Sequelize.UUID,
+      type: Sequelize.STRING,
       primaryKey: true,
     },
     name: {

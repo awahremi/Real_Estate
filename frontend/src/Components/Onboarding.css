@@ -16,6 +16,9 @@
   display: flex;
   justify-content: space-between;
 }
+.onboarding-host span{
+  color: white;
+}
 
 .onboarding-host div {
   width: 33%;
@@ -26,8 +29,8 @@
 }
 
 .circle {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
