@@ -1,4 +1,5 @@
 .onboarding {
+  margin-top: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,9 +17,6 @@
   display: flex;
   justify-content: space-between;
 }
-.onboarding-host span{
-  color: white;
-}
 
 .onboarding-host div {
   width: 33%;
@@ -29,8 +27,8 @@
 }
 
 .circle {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   justify-content: center;

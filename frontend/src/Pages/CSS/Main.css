@@ -1,0 +1,52 @@
+.main {
+  padding: 0 150px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+h1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-family: DM Sans;
+  font-weight: 500;
+  line-height: 1.25;
+  font-family: DM Sans;
+  line-height: 1.25;
+  font-weight: 500;
+  font-size: 70px;
+}
+
+.main-container-left {
+}
+
+.main-container-left span {
+  color: #7b8188;
+  font-size: 20px;
+}
+
+.main-container-left button {
+  background-color: #ff4f4f;
+  color: white;
+  padding: 20px 50px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 30px;
+}
+
+.main-container-left a {
+  color: white;
+}
+
+.main-container-right {
+}
+
+.main-container-right img {
+  width: 40vw;
+  border-radius: 10px;
+}
