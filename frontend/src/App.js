@@ -4,7 +4,6 @@ import {
   Routes,
 } from "react-router-dom";
 import "./App.css";
-import Footer from "./Components/Footer";
 import Navbar from "./Components/navbar";
 import Login from "./Pages/login";
 import Main from "./Pages/main";
@@ -26,7 +25,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
